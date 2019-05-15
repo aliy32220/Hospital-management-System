@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+title{
+    
+}
+
+.menu{
+    background-color:#4c0000;
+    
+}
+
+img.logo{
+    max-width: 240px;
+    width: auto;
+    height: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+.main_menu{
+    padding: 5px 0 5px 0;
+    text-align: center;
+    line-height: 32px;
+    
+}
+
+ul.main_menu{
+    width:100%;
+    height:50px;
+    margin-top: auto;
+}
+
+.main_menu li{
+    float:left;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    position:relative;
+    display:block;
+}
+
+.main_menu li a{
+    text-decoration: none;
+    color: beige;
+    padding: 8px;
+    font-variant: small-caps;
+    display:block;
+    width: 100px;
+}
+
+.main_menu li a:hover{
+    background-color: #330000;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+     -webkit-transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    display:block;
+}
+
+.main_menu li ul{
+    float:left;
+    text-align: center;
+    background-color: #4c0000;
+    opacity: 0.7;
+    font-family: 'Fjalla One', sans-serif;
+    display:none;
+}
+
+.main_menu li:hover ul{
+    font-family: 'Fjalla One', sans-serif;
+    position:absolute;
+    display:block;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    background-image: url(main%20back.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    
+}
+.slider{
+    width: auto;
+    height: 610px;
+    background: url(1.gif);
+    margin: auto;
+    background-size: cover; 
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        background: url(2.jpg);
+        background-size: cover;
+    }
+    50%{
+        background: url(3.jpg);
+        background-size: cover;
+    }
+    75%{
+        background: url(4.jpg);
+        background-size: cover;
+    }
+    100%{
+        background: url(1.gif);
+        background-size: cover;
+    }
+}
+
+.forms{
+    margin: 20px auto;
+    padding: 20px;
+    width: 600px;
+   
+    
+}
+
+.forms input[type="text"]{
+    width: 300px;
+    height: 20px;
+    margin-left: 160px;
+}
+
+.forms input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    margin-left: 410px;
+    margin-top: 20px;
+}
+
+.forms input[type="date"]{
+    width: 300px;
+    height: 20px;
+    margin-left: 160px;
+}
